@@ -38,7 +38,7 @@
       }
     </style>
   </head>
-  <body class="text-(--text) font-(--font-sans)">
+  <body class="text-(--text) font-(--font-sans) ">
     <div id="root"></div>
 
     <script type="text/babel">
@@ -112,7 +112,7 @@
         { value: "+", variante: "padraoOperacoes" },
         { value: "0", className: "col-span-2" },
         { value: "," },
-        { value: "=", variante: "padraoOperacoes" },
+        { value: "=", variante: "padraoOperacoes", className:"bg-[#7F45E2]" },
       ];
 
       function Calculadora({ children, className, ...props }) {
@@ -153,7 +153,7 @@
 
       function App() {
         return (
-          <main className="flex items-center justify-center h-screen">
+          <main className="flex items-center justify-center h-screen bg-linear-[180deg,_#807ECE_0%,_#8E7ECE_100%]">
             <Calculadora />
           </main>
         );
